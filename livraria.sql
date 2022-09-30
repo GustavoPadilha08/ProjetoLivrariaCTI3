@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28-Set-2022 às 03:21
--- Versão do servidor: 10.4.24-MariaDB
--- versão do PHP: 7.4.29
+-- Tempo de geração: 01-Out-2022 às 01:46
+-- Versão do servidor: 10.4.22-MariaDB
+-- versão do PHP: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `livraria`
+-- Banco de dados: `projeto_livraria_joao`
 --
 
 -- --------------------------------------------------------
@@ -31,6 +31,15 @@ CREATE TABLE `editora` (
   `codigo_editora` int(11) NOT NULL,
   `nome_editora` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `editora`
+--
+
+INSERT INTO `editora` (`codigo_editora`, `nome_editora`) VALUES
+(1, 'Viena'),
+(2, 'Livro Bom'),
+(3, 'Leia bem');
 
 -- --------------------------------------------------------
 
